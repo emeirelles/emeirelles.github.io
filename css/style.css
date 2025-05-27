@@ -1,0 +1,703 @@
+/* ------------------------------------------
+-- Fontes de caracteres
+--------------------------------------------> */
+@import url('fonts.css');
+
+/* ------------------------------------------
+-- Elementos de identidade visual
+--------------------------------------------> */
+:root {
+    --cor-dark-green:  #223D09;	
+    --cor-mint-green:  #A3D977; 
+    --cor-deep-green:  #5C7F4d;	
+    --cor-light-green: #DCE6DC; 
+    --cor-light-gray:  #87837f;
+    --cor-black: 	   #000000; 
+	
+	--preto:		  #000000;
+	--branco:	  	  #ffffff;
+	--branco-neve:    #eaeddf;
+	--musgo-suave:	  #7d8463;
+	--verde-menta:    #d1f275;
+	--verde-claro:    #8ebc11;
+	--verde-escuro:   #487200;
+	--laranja-claro:  #f2ab4e;
+	--laranja-escuro: #d17418;
+	--marrom:		  #844908;	 
+
+
+	--fonte-family-dm-sans:	'DM Sans';
+	--fonte-family-dm-mono:	'DM Mono';
+	--fonte-size-titulo: 	 1.8rem;
+	--fonte-size-subtitulo:	 1.38rem;
+	--fonte-size-descricao:	 1rem;
+    --fonte-style-regular:   400;
+    --fonte-style-medium:    500;
+    --fonte-style-bold:      700;
+
+/* ------------------------------------------
+-- Cores e fontes usadas no site
+--------------------------------------------> */
+	--cor-body-fundo:           	   	var(--preto);
+
+	--cor-header-fundo:           	   	var(--musgo-suave);
+	--cor-header-mainnav:  	   			var(--branco-neve);
+
+	--cor-hero-titulo:           		var(--verde-menta);
+	--cor-hero-descricao:      			var(--branco-neve);
+
+	--cor-nossa-atuacao-fundo:    		var(--branco-neve);
+	--cor-nossa-atuacao-titulo: 		var(--verde-escuro);
+	--cor-nossa-atuacao-subtitulo:		var(--marrom);	
+	--cor-nossa-atuacao-descricao: 		var(--preto);
+
+	--cor-list-titulo:					var(--verde-escuro);	
+	--cor-list-descricao: 				var(--preto);	
+
+	--cor-quem-somos-fundo:    	       	var(--musgo-suave);
+	--cor-quem-somos-titulo:    		var(--branco);
+	--cor-quem-somos-subtitulo:     	var(--verde-menta);
+	--cor-quem-somos-descricao:    		var(--branco-neve);
+
+	--cor-como-trabalhamos-fundo:    	var(--branco-neve);
+	--cor-como-trabalhamos-titulo: 		var(--verde-escuro);
+	--cor-como-trabalhamos-subtitulo:	var(--marrom);	
+	--cor-como-trabalhamos-descricao: 	var(--preto);
+
+	--cor-parceiros-fundo:        	   	var(--musgo-suave);
+	--cor-parceiros-titulo:      		var(--branco-neve);
+
+	--cor-footer-fundo:        	   		var(--marrom);
+	--cor-footer-descricao:      	    var(--branco-neve);
+
+	--fonte-family-geral:	   var(--fonte-family-dm-sans);
+	--fonte-family-especifica: var(--fonte-family-dm-mono);
+}
+
+/* ------------------------------------------
+-- Atribuições de cores e fontes
+--------------------------------------------> */
+.cor-dark-green   		  			{ color: var(--cor-dark-green); }
+.cor-deep-green   		  			{ color: var(--cor-deep-green); }
+.cor-mint-green   		  			{ color: var(--cor-mint-green); }
+.cor-light-green  		  			{ color: var(--cor-light-green); }
+.cor-light-gray   		  			{ color: var(--cor-light-gray); }
+
+.cor-black 		  		  			{ color: var(--cor-black); }
+
+.cor-body-fundo   		  			{ color: var(--cor-body-fundo); }
+.cor-header-fundo 		  			{ color: var(--cor-header-fundo); }
+.cor-header-mainnav  				{ color: var(--cor-header-mainnav); }
+
+.cor-hero-titulo 	     			{ color: var(--cor-hero-titulo); }
+.cor-hero-descricao 	     		{ color: var(--cor-hero-descricao); }
+
+.cor-nossa-atuacao-fundo     		{ color: var(--cor-nossa-atuacao-fundo); }
+.cor-nossa-atuacao-titulo 	 		{ color: var(--cor-nossa-atuacao-titulo); }
+.cor-nossa-atuacao-subtitulo 		{ color: var(--cor-nossa-atuacao-subtitulo); }
+.cor-nossa-atuacao-descricao		{ color: var(--cor-nossa-atuacao-descricao); }
+
+.cor-list-titulo 					{ color: var(--cor-list-titulo); }
+.cor-list-descricao 				{ color: var(--cor-list-descricao); }
+
+.cor-quem-somos-fundo 				{ color: var(--cor-quem-somos-fundo); }
+.cor-quem-somos-titulo 				{ color: var(--cor-quem-somos-titulo); }
+.cor-quem-somos-subtitulo 			{ color: var(--cor-quem-somos-subtitulo); }
+.cor-quem-somos-texto 				{ color: var(--cor-quem-somos-texto); }
+
+.cor-como-trabalhamos-fundo 		{ color: var(--cor-como-trabalhamos-fundo); }
+.cor-como-trabalhamos-titulo 		{ color: var(--cor-como-trabalhamos-titulo); }
+.cor-como-trabalhamos-texto 		{ color: var(--cor-como-trabalhamos-bloco1-texto); }
+.cor-como-trabalhamos-list-titulo 	{ color: var(--cor-como-trabalhamos-list-titulo); }
+.cor-como-trabalhamos-list-texto 	{ color: var(--cor-como-trabalhamos-list-texto); }
+
+.cor-parceiros-fundo 				{ color: var(--cor-parceiros-fundo); }
+.cor-parceiros-titulo 				{ color: var(--cor-parceiros-titulo); }
+
+.cor-footer-fundo 					{ color: var(--cor-footer-fundo); }
+.cor-footer-texto 					{ color: var(--cor-footer-texto); }
+
+.fonte-family-geral 	 { fonte-family-geral: 		var(--fonte-family-geral); }
+.fonte-family-especifica { fonte-family-especifica: var(--fonte-family-especifica); }
+.fonte-size-titulo       { fonte-size-titulo:	    var(--fonte-size-titulo); }
+.fonte-size-subtitulo    { fonte-size-subtitulo:	var(--fonte-size-subtitulo); }
+.fonte-size-descricao    { fonte-size-subtitulo:	var(--fonte-size-descricao); }
+.fonte-style-regular 	 { fonte-style-regular: 	var(--fonte-style-regular); }
+.fonte-style-medium 	 { fonte-style-medium: 		var(--fonte-style-medium); }
+.fonte-style-bold 		 { fonte-style-bold: 		var(--fonte-style-bold); }
+
+
+/* ------------------------------------------
+-- Body
+--------------------------------------------> */
+* {
+  margin: 0; /* D garante que uma margenzinha chata de 8px ao redor dos sites não seja aplicada apliquem automaticamente pelos browsers */
+}
+
+body {
+    background-color: var(--cor-body-fundo);	   /* D define a cor da fonte */	
+    font-family: 	  var(--fonte-family-geral);   /* D define a fonte */	
+	font-size:        var(--fonte-size-descricao); /* D define o tamanho da fonte */
+    font-weight: 	  var(--fonte-style-regular);  /* D define o estilo da fonte */
+	overflow-x:       hidden;					   /* D impede qualquer rolagem horizontal causada por width mal-criada. */
+}
+
+a {
+    text-decoration: none; /* D remove o sublinhado padrão dos links (<a>) - obs: não remove a cor. */
+}
+
+/* ------------------------------------------
+-- Seção HEADER
+--------------------------------------------> */
+.header-container {
+	background-color: var(--cor-header-fundo); /* D define a cor do fundo */
+	width: 			  100%;  				   /* D garante largura total visual e evita bug de scrollbar horizontal */
+	position: 		  fixed; 				   /* D fixa a seção em um local específico na tela, independentemente do scroll ou do restante da página */
+	top: 			  0px; 	 				   /* D fixa a sessão topo da tela */ 
+	height: 		  50px;			 		   /* D define a altura do logo */
+	z-index: 		  99;	 				   /* D garante que o header fique acima dos outros elementos */
+}
+.header-container .wrapper {
+    display: 		 flex;			/* D ativa o Flexbox, permitindo alinhar e controlar os elementos do wrapper em linha (default) ou coluna. */
+    justify-content: space-between; /* D posiciona o bloco da esquerda (com o logo) colado na borda da esquerda, e o bloco da direita (menu) colado na borda da direita, sem espaço extra nessas bordas */
+    align-items: 	 center;		/* D centraliza os elementos ao longo do eixo vertical (secundário) */
+    width: 			 100%;			/* D garante que o wrapper ocupe todo o espaço horizontal do container */
+}
+
+.header-container .wrapper > a img { /* define características específicas para a img logo diretamente relacionada ao wrapper, não se aplicando ao 'a' do mainnave, outro elemento-filho de wrapper */
+	display: 	  block; 			 /* D converte o logo em um bloco para que não sofra influência do comportamento inline, respeite as dimensões definidas e não gere espaços colaterais indesejados */
+    height: 	  35px;  			 /* D define a altura do logo */
+	padding-left: 2.5rem;
+}
+
+.header-container .wrapper .mainnav {
+    display: 		inline; 				    	/* D faz o menu se comportar como parte do texto, ficando fica na mesma linha que outros elementos, não quebrando linha automaticamente (só se o espaço acabar) */
+    vertical-align: bottom;						  	/* D alinha os itens (in-line) de menu ()  elementos inline */	
+    text-align:		right; 						  	/* D alinha o texto à direita no elemento */
+    font-family: 	var(--fonte-family-especifica); /* D define a fonte usada para os itens de menu */
+    font-size: 		1rem;							/* D define o tamanho da fonte */ 
+    line-height: 	1.24rem;						/* D define o espaçamento vertical entre as linhas do texto */
+    padding: 		0.75rem 1rem 0.75rem 0;
+}
+.header-container .wrapper .mainnav a {
+    color: 			 var(--cor-header-mainnav); /* D define a cor da fonte */
+    text-decoration: none;						/* D remove o sublinhado padrão dos links (<a>) - obs: não remove a cor. */
+	padding: 		 0.4rem 1rem 0.2rem 1rem;
+}
+.header-container .wrapper .icon {
+    display: 		 none; 						/* D oculta o ícone hamburguer na tela */
+	color: 			 var(--cor-header-mainnav); /* D define a cor da fonte */
+	font-weight:   	 var(--fonte-style-bold);   /* D define o estilo da fonte */
+    text-decoration: none; 					    /* D remove o sublinhado padrão dos links (<a>) - obs: não remove a cor. */
+    margin-right: 	 1.4rem; 
+}
+.header-container .wrapper .mainnav .language {
+    font-size: 		9pt;		/* D define o tamanho da fonte */
+    text-transform: uppercase;	/* converte todas as letras para maiúsculas */
+}
+
+@media (max-width: 768px) {
+	.header-container .wrapper {
+        align-items: center; /* D alinha os elementos do wrapper no topo do eixo vertical (secundário) para fins de responsividade */
+        height: 	 auto; 		 		  /* D Somente necessário porque no wrapper existe um height fixo parametrizado */
+	}
+	
+	.header-container .wrapper .mainnav {
+		display:    	none; 				  /* D oculta o menu na tela */
+		transition: 	max-height 0.3s ease;
+		flex-direction: column; /* D define o eixo principal como vertical, organizando os elementos em coluna para o menu abrir verticalmente' */
+		background-color: var(--cor-header-fundo); /* D define a cor do background */
+		width: 100%;
+		padding: 1rem 0; 
+	}
+	
+	.header-container .wrapper .mainnav.active {
+		display:    flex;  /* D ativa o Flexbox, permitindo alinhar e controlar os elementos do wrapper em linha (default) ou coluna. */
+		max-height: 500px; /* ou o valor que comporte todos os links */
+        padding:    1rem;  /* adiciona padding apenas quando aberto */
+	}
+	
+	.header-container .wrapper .icon {
+		color: var(--cor-header-mainnav); /* D define a cor da fonte */
+		display: block; 	   /* D mostra o ícone hamburguer, o convertendo em  um bloco para que não sofra influência do comportamento inline, respeite as dimensões definidas e não gere espaços colaterais indesejados */
+        text-decoration: none; /* D remove o sublinhado padrão dos links (<a>) - obs: não remove a cor. */
+        padding: 0.5rem;
+	}
+}
+
+/* ------------------------------------------
+-- Seção HERO
+--------------------------------------------> */
+.hero-container {
+    display: 	 flex;	   /* D ativa o Flexbox, alinhando e controlando a imagem de fundo e o wrapper sobreposto a elaativa o Flexbox, alinhando e controlando, neste caso, a imagem de fundo e o wrapper sobreposto a ela */
+    position: 	 relative; /* D permite o posicionamento absoluto seguro da imagem de fundo (hero-img),  preenchendo toda a área da .hero-container – sem esse parâmetro, a .hero-img poderia se posicionar de forma descontrolada em relação ao <body> ou outro ancestral com position */
+    width: 		 100%;	   /* D garante que o container ocupe todo o espaço horizontal do elemento-pai, que é o body() */
+    min-height:  50vh;     /* D altura mínima em relação a altura da viewport (tela visível do navegador), independente da altura do conteúdo */
+	margin-top:  50px;	   /* D define o espaçamento vertical acima do container (que entra para dentro sob o header,porque o header é definido com position: fixed */	
+}
+
+.hero-container .img { /* D imagem de fundo separada, com filtro linear-gradient */
+    background-image: 
+        linear-gradient(
+            rgba(10, 30, 40, 0.5), 
+            rgba(10, 30, 40, 0.5)
+        ),
+        url('../images/fundo_hero.jpg');
+	/* D Aplica dois elementos ao background:  
+       1) A imagem de fundo ('fundo_hero.jpg').  
+       2) Um degradê escuro semi-transparente para melhorar a legibilidade do texto */	
+    position: absolute;			  /* D posiciona a imagem de forma absoluta dentro da hero-container (que é relative). Isso faz com que ela seja 'retirada' do fluxo normal e 'grudada' no container */ 
+    top: 	  0;				  /* D coloca a borda superior da imagem alinhada ao topo da hero-container. Antes, isso causava o 'vazamento' para o header. Agora, como colocamos padding-top no container, a imagem respeita esse espaço */				
+    left: 	  0;				  /* D coloca a borda esquerda da imagem alinhada à borda esquerda da hero-container. Assim, cobre a largura total */
+    width: 	  100%;				  /* D garante que a imagem se estenda até ocupar toda a largura da hero-container, independentemente do tamanho da tela */
+    height:   100%;				  /* D garante que a imagem preencha toda a altura da hero-container, acompanhando o min-height e qualquer crescimento adicional */
+    background-size: cover;		  /* D faz com que a imagem de fundo sempre cubra toda a área disponível, mesmo que precise cortar um pedaço, preservando a proporção */
+    background-position: center;  /* D mantém a imagem sempre centralizada, evitando que fique "cortada" de maneira desproporcional ao redimensionar a tela */
+    background-repeat: no-repeat; /* D garante que a imagem não se repita automaticamente. Apenas uma instância da imagem é mostrada */
+    z-index: 0;  				  /* D coloca a imagem atrás de todos os outros elementos filhos da hero-container (como slogan e descrição). Sem isso, a imagem poderia sobrepor ou tampar o conteúdo. Como o conteúdo tem z-index superior (ou está no fluxo), ele aparece 'por cima' */
+}
+
+.hero-container .wrapper {
+    display:         flex;		 /* D ativa o Flexbox, permitindo alinhar e controlar os elementos do wrapper em linha (default) ou coluna. */
+    align-items:     center;	 /* D centraliza os elementos ao longo do eixo vertical (secundário) */
+    max-width:       1400px;	 /* D Define a largura máxima do conteúdo do wrapper. Evita que, em telas muito grandes, o conteúdo fique esticado demais, preservando a legibilidade e o equilíbrio visual. No Hero, permite espaço suficiente para slogan e descrição lado a lado */
+    width:           90vw;		 /* D viabiliza margens laterais proporcionais, favorecendo um layout 'respiro' */
+    margin: 		 0 auto;	 /* D atua fora do flexbox, centralizando horizontalmente o wrapper e o seu bloco de conteúdo dentro da .hero-container. Como .wrapper tem uma largura definida (width, max-width), margin: 0 auto cria espaçamento igual nas laterais até atingir esse limite. (responsividade) */
+	gap: 			 6rem;		 /* D cria espaçamento uniforme entre os blocos de conteúdo, mantendo-os organizados visualmente e melhorando a legibilidade e experiência do usuário em layouts responsivos */
+    z-index: 		 1;  		 /* D garante que o conteúdo textual fique acima da imagem de fundo */
+}
+
+.hero-container .wrapper .slogan {
+    display: 	 flex;   /* D ativa o Flexbox, permitindo alinhar e controlar os elementos do wrapper em linha (default) ou coluna. */
+    align-items: center; /* D centraliza os elementos ao longo do eixo vertical (secundário) */
+    flex-basis:  35%;	 /* D define o % inicial do espaço disponível para a largura do bloco relativo ao container pai (neste caso, o wrapper) */
+	max-width:   35%;    /* D garante que o bloco não passe do % definido em flex-basis, mesmo que o conteúdo force */
+	text-align:  left; 	 /* D alinha o texto à esquerda no elemento (sempre bom garantir) */
+}
+
+.hero-container .wrapper .slogan .titulo {
+    color: 		 var(--cor-hero-titulo);  /* D define a cor da fonte */
+    /*font-weight: var(--fonte-style-bold);*/ /* D define o estilo da fonte */
+    font-size:   4.2rem;				  /* D define o tamanho da fonte */
+    line-height: 4.9rem; 				  /* D define o espaçamento vertical entre as linhas do texto */
+}
+
+.hero-container .wrapper .detalhe {
+    display: 		 flex;   /* D ativa o Flexbox, permitindo alinhar e controlar os elementos do wrapper em linha (default) ou coluna. */
+	flex-direction:  column; /* D define o eixo principal como vertical, organizando os elementos em coluna e empilhando verticalmente título (h2), subtítulo e descrições. Sem isso, os conteúdos ficariam lado a lado, quebrando o layout */
+    justify-content: center; /* D centraliza os elementos lado a lado verticalmente */
+    flex-basis:      55%;    /* D define o % inicial do espaço disponível para a largura do bloco relativo ao container pai (neste caso, o wrapper) */
+	max-width:  	 55%;    /* D garante que o bloco não passe do % definido em flex-basis, mesmo que o conteúdo force */
+	text-align: 	 left;   /* D alinha o texto à esquerda no elemento (sempre bom garantir) */ 
+}
+
+.hero-container .wrapper .detalhe .descricao-paragrafo-1 {
+    color:         var(--cor-hero-descricao); /* D define a cor da fonte */
+    font-size:     1.38rem;					  /* D define o tamanho da fonte */
+    line-height:   2.1rem;					  /* D define o espaçamento vertical entre as linhas do texto */
+    margin-bottom: 1rem;					  /* D define o espaçamento vertical abaixo do elemento */
+}
+
+.hero-container .wrapper .detalhe .descricao-paragrafo-2 {
+    color:         var(--cor-hero-descricao); /* D define a cor da fonte */
+    font-size:     1.38rem;					  /* D define o tamanho da fonte */
+    line-height:   2.1rem;					  /* D define o espaçamento vertical entre as linhas do texto */
+}
+
+@media (max-width: 768px) {
+    .hero-container .wrapper  {
+        flex-direction: column; /* D define o eixo principal como vertical, organizando os elementos em coluna para fins de responsividade */
+        text-align: 	center; /* D centraliza o texto dentro do elemento */
+        padding: 		1rem;	/* D atribui 1rem uniformemente para padding-top, padding-right, padding-bottom e padding-left */
+		gap: 			0.5rem; /* D ajusta o gap entre os blocos de conteúdo para fins de responsividade */
+    }
+    .hero-container .wrapper .slogan, .hero-container .wrapper .detalhe {
+        display: contents;	   /* D remove o próprio elemento do fluxo do layout, fazendo com que seus filhos se comportem como se pertencessem ao pai do elemento que, neste caso, é body(). Foi a solução encontrada para dinimuir a distância vertical entre os blocos slogan e detalhe */
+		max-width: 	   90%;    /* D define a largura máxima do conteúdo da seção */
+        padding-right: 0;  	   /* D remove a padding lateral no mobile */
+        margin-bottom: 0;      /* D define o espaçamento vertical abaixo do elemento */
+		text-align:    center; /* D centraliza o texto dentro do elemento */
+		margin:        0 auto; /* D Como o flex-diretion mudou de row para column e o max-width ´não está em 100%, torna-se necessário atuar fora do flexbox, centralizando horizontalmente o wrapper e o seu bloco de conteúdo dentro do container, criando espaçamento igual nas laterais até atingir esse limite */
+		
+    }
+    .hero-container .wrapper .slogan .titulo {
+        font-size:   2.5rem; /* D ajusta o tamanho da fonte da classe titulo do título, bloco Slogan */
+        line-height: 3rem;   /* D ajusta o espaçamento vertical entre as linhas do texto */
+
+    }
+    .hero-container .wrapper .detalhe .descricao {
+        font-size:   1.1rem; /* D ajusta o tamanho da fonte da classe descricao, bloco detalhe */
+        line-height: 1.5rem; /* D ajusta o espaçamento vertical entre as linhas do texto */
+    }
+}
+
+/* ------------------------------------------
+-- Seção NOSSA ATUAÇÃO
+--------------------------------------------> */
+.nossa-atuacao-container {
+	background-color: var(--cor-nossa-atuacao-fundo); /* D define a cor do background */
+	width: 			  100%; /* D garante que o container ocupe todo o espaço horizontal do elemento-pai body() */
+	padding-top:	  3rem;
+	padding-bottom:   4rem;
+}
+
+.nossa-atuacao-container .wrapper {		  
+	display: 	 	  flex;	  	  /* D ativa o Flexbox, permitindo alinhar e controlar os elementos do wrapper em linha (default) ou coluna. */
+	flex-direction:   column; 	  /* D define o eixo principal como vertical, organizando os elementos em coluna e empilhando verticalmente título (h2), subtítulo e descrições. Sem isso, os conteúdos ficariam lado a lado, quebrando o layout */
+	align-items: 	  felx-start; /* D alinha os elementos à esquerda, no início do eixo horizontal (secundário) */ 	 
+	max-width: 	  	  1400px; 	  /* D limita o espaço para o texto + imagem, garantindo que o layout mantenha proporção harmoniosa em diferentes tamanhos de tela */
+	margin: 	 	  0 auto; 	  /* D atua fora do flexbox, centralizando horizontalmente o wrapper e o seu bloco de conteúdo dentro do container. Como .wrapper tem uma largura definida (width, max-width), margin: 0 auto cria espaçamento igual nas laterais até atingir esse limite. (responsividade) */
+}
+
+.nossa-atuacao-container .wrapper .texto {
+    max-width: 	   100%; /* D define a largura máxima do conteúdo do texto */
+	text-align:    left; /* D alinha o texto à esquerda no elemento */
+	padding-left:  8rem;
+	padding-right: 8rem;  
+	margin-bottom: 1rem; /* D define o espaçamento vertical abaixo do elemento */
+}
+
+.nossa-atuacao-container .wrapper .texto .titulo {
+	color: 		   var(--cor-nossa-atuacao-titulo); /* D define a cor da fonte */
+    font-size: 	   var(--fonte-size-titulo);		/* D define o tamanho da fonte */
+	font-weight:   var(--fonte-style-bold);			/* D define o estilo da fonte */
+    line-height:   2rem;							/* D define o espaçamento vertical entre as linhas do texto */
+	margin-bottom: 1rem; 							/* D define o espaçamento vertical abaixo do elemento */
+}
+
+.nossa-atuacao-container .wrapper .texto .subtitulo {
+    font-size: 	   var(--fonte-size-subtitulo);		   /* D define o tamanho da fonte */
+	color: 		   var(--cor-nossa-atuacao-subtitulo); /* D define a cor da fonte */
+    margin-bottom: 2rem;  							   /* D define o espaçamento vertical abaixo do elemento */
+    padding-left:  0;      /* se quiser igualar alinhamento horizontal */
+}
+
+.nossa-atuacao-container .wrapper .texto .descricao {
+    font-size: 	   var(--fonte-size-descricao);        /* D define o tamanho da fonte */
+	color: 		   var(--cor-nossa-atuacao-descricao); /* D define a cor da fonte */
+    margin-bottom: 2rem;  							   /* D define o espaçamento vertical abaixo do elemento */
+    padding-left: 0;      /* se quiser igualar alinhamento horizontal */
+}
+
+/* Lista de elementos ----------------------- */
+.lista-container { 
+    display: 		 flex;       /* D ativa o Flexbox, permitindo alinhar e controlar os elementos do wrapper em linha (default) ou coluna. */
+    flex-wrap: 		 wrap;		 /* D permite quebrar linha se o espaço não for suficiente (responsividade) */
+    gap: 			 2rem;		 /* D Cria espaçamento uniforme entre os blocos de conteúdo, mantendo-os organizados visualmente e melhorando a legibilidade e experiência do usuário em layouts responsivos */
+    justify-content: center;	 /* D centraliza os elementos lado a lado horizontalmente */
+    align-items: 	 flex-start; /* D centraliza os elementos ao longo do eixo vertical (secundário) */
+	width: 			 100%;		 /* D garante que o container ocupe todo o espaço horizontal do elemento-pai body() */
+    max-width: 		 1400px;     /* D limita a largura máxima para evitar que os elementos fiquem muito espaçados uns dos outros em telas grandes */
+	margin: 		 0 auto;	 /* D atua fora do flexbox, centralizando horizontalmente o wrapper e o seu bloco de conteúdo dentro do container. Como .wrapper tem uma largura definida (width, max-width), margin: 0 auto cria espaçamento igual nas laterais até atingir esse limite. (responsividade) */
+	box-sizing: 	 border-box; /* D inclui padding e border dentro do cálculo de width e height, evitando que o .lista-container fique maior do que o esperado e garantindo que os itens se alinhem perfeitamente no centro, mesmo com paddings ou borders */
+}
+
+.lista-container .elemento {
+    display: 		flex;   /* D ativa o Flexbox, permitindo alinhar e controlar os elementos do wrapper em linha (default) ou coluna. */
+    flex-direction: column; /* D define o eixo principal como vertical, empilhando o ícone, título e descrição que compõem o elemento */
+    align-items: 	center;	/* D centraliza os elementos à esquerda, ao longo do eixo horizontal (secundário) */ 
+    text-align: 	center; /* D centraliza o texto dentro do elemento */
+    width: 			160px;  /* D define a largra do elemento */
+    min-width: 		150px;  /* D define a largura mínima do elemento */
+    max-width: 		200px;  /* D define a largura máxima do elemento */
+}
+
+.lista-container .elemento .icone img { 
+	display: block; 	    /* D converte o ícone em um bloco para que não sofra influência do comportamento inline, respeite as dimensões definidas e não gere espaços colaterais indesejados */
+	width: 50px;		    /* D define a largra do elemento */
+	margin-bottom: 0.3rem;  /* D define o espaçamento vertical abaixo do elemento */
+	padding: 1rem 1rem 0 0;
+}
+
+.lista-container .elemento .texto {
+	text-align: center; /* D centraliza o texto dentro do elemento */
+    max-width:  400px;  /* D define a largura máxima do elemento */
+}
+
+.lista-container .elemento .texto h3 { 
+    font-size: 	   1rem;					/* D define o tamanho da fonte */
+	color:         var(--cor-list-titulo);  /* D define a cor da fonte */
+	font-weight:   var(--fonte-style-bold); /* D define o estilo da fonte */
+	line-height:   1rem;					/* D define o espaçamento vertical entre as linhas do texto */
+	margin-top:    0.7rem;					/* D define o espaçamento vertical acima do elemento */
+	margin-bottom: 0.5rem;					/* D define o espaçamento vertical abaixo do elemento */
+}
+
+.lista-container .elemento .texto p { 
+    font-size: 	1rem;				  /* D define o tamanho da fonte */
+	color: var(--cor-list-descricao); /* D define a cor da fonte */ 
+	line-height:   1.25rem;			  /* D define o espaçamento vertical entre as linhas do texto */
+	margin: 0;
+}
+
+@media (max-width: 768px) {
+    .nossa-atuacao-container .wrapper  {
+        text-align: center;		/* D centraliza o texto dentro do elemento */
+    }
+
+    .nossa-atuacao-container .wrapper .texto {
+		text-align: center; /* D centraliza o texto dentro do elemento */
+		padding: 2rem 2rem;
+    }
+
+	.nossa-atuacao-container .wrapper .texto .subtitulo {
+		margin-bottom: 1rem;  /* ajusta a altura entre o final do subtítulo e o que vem abaixo */
+	}
+	
+	.nossa-atuacao-container .wrapper .texto .descricao {
+		margin-bottom: 1rem;  /* ajusta a altura entre o final o subtítulo e o que vem abaixo */
+	}
+
+    .lista-container {
+        flex-direction: column; /* D define o eixo principal como vertical, organizando os elementos em coluna para fins de responsividade */
+		align-items:    center; /* D centraliza os elementos à esquerda, ao longo do eixo horizontal (secundário) */
+    }
+
+	.lista-container .elemento .icone img { /* antigo flex-container-col-teste .list-icon*/
+		margin-bottom: 0rem;
+		padding: 0;
+	}
+
+	.lista-container .elemento .texto h3 { /* antigo flex-container-col-teste h3 */
+		margin-top:    0rem;		/* D ajusta o espaçamento vertical acima do elemento */
+		margin-bottom: 0rem;
+	}
+}
+/* ------------------------------------------
+-- Seção QUEM SOMOS
+--------------------------------------------> */
+.quem-somos-container {
+	background-color: var(--cor-quem-somos-fundo); /* D define a cor do background */
+	width:      100%;  							   /* D garante que o container ocupe todo o espaço horizontal do elemento-pai body() */
+	min-height: 200px; 							   /* D Altura mínima em relação a altura da viewport (tela visível do navegador), independente da altura do conteúdo */
+}
+
+.quem-somos-container .wrapper {
+	display:         flex;			/* D ativa o Flexbox, permitindo alinhar e controlar os elementos do wrapper em linha (default) ou coluna. */
+	justify-content: space-between; /* D posiciona o bloco da esquerda (imagem de fundo) colado na borda da esquerda, e o da direita colado na borda da direita, sem espaço extra nessas bordas */ 
+	align-items: 	 center;		/* D centraliza os elementos ao longo do eixo vertical (secundário) */
+	width:           100%;			/* D manter esse cara aqui, para não ter problemas de responsividade - garante que o wrapper ocupe todo o espaço horizontal do container */*/ 
+}
+
+.quem-somos-container .wrapper .img {
+	background-image:    url('../images/fundo_quem_somos.png'); /* D define a imagem de fundo */
+	background-size:     cover; 								/* D cobre todo o bloco mantendo a proporção da imagem */
+    background-position: center;  							    /* D mantém a imagem sempre centralizada, evitando que fique "cortada" de maneira desproporcional ao redimensionar a tela */
+	background-repeat:   no-repeat;  							/* D não repete a imagem de fundo */
+	min-height: 	     600px;								    /* D define a altura mínima para garantir seção alta e imagem visível */
+	min-width: 		     40vw;  								/* D define a largura mínima de da viewport, mantendo a imagem sempre ocupando este tamanho de espaço à esquerda */ 
+}
+
+.quem-somos-container .wrapper .texto {
+	max-width:     50%;	 /* D define que o texto ocupe este % do do espaço disponível, criando equilíbrio com a imagem */
+	padding-left:  3rem; /* Aqui sim, vai funcionar! */
+	padding-right: 4rem; /* Aqui sim, vai funcionar! */
+}
+
+.quem-somos-container .wrapper .texto .titulo {
+    font-size: 	   var(--fonte-size-titulo);	 /* D define o tamanho da fonte */
+	color:         var(--cor-quem-somos-titulo); /* D define a cor da fonte */
+	font-weight:   var(--fonte-style-bold);		 /* D define o estilo da fonte */
+	margin-bottom: 1rem;  						 /* D define o espaçamento vertical abaixo do elemento */
+}
+
+.quem-somos-container .wrapper .texto .subtitulo {
+    font-size: 	   var(--fonte-size-subtitulo);	    /* D define o tamanho da fonte */
+	color:         var(--cor-quem-somos-subtitulo); /* D define a cor da fonte */
+	margin-top:    0;								/* D define o espaçamento vertical acima do elemento */
+	margin-bottom: 1rem;							/* D define o espaçamento vertical abaixo do elemento */
+}
+
+.quem-somos-container .wrapper .texto .descricao {	
+    font-size: 	   var(--fonte-size-descricao);	    /* D define o tamanho da fonte */
+	color:         var(--cor-quem-somos-descricao); /* D define a cor da fonte */
+	margin-bottom: 0.5rem;					    	/* D define o espaçamento vertical abaixo do elemento */
+}
+
+@media (max-width: 768px) { 	 /* Responsividade: ajustes para telas menores (até 768px de largura) */
+	.quem-somos-container .wrapper {
+		flex-direction: column; /* D define o eixo principal como vertical, organizando os elementos em coluna para fins de responsividade */
+	}
+	.quem-somos-container .wrapper .img {
+		display: none;  		 /* D oculta a imagem à esquerda em telas pequenas */
+	}
+	.quem-somos-container .texto {
+		max-width: 	90%;    /* Em telas pequenas (como smartphones), o texto precisa ocupar mais da tela → senão, fica apertado demais. Aqui, o texto vai para máximo de 90% → cria margens laterais de 5% de cada lado → melhora a leitura */
+		text-align: center; /* D centraliza o texto dentro do elemento */
+		margin: 	0 auto;	/* D Como o flex-diretion mudou de row para column e o max-width ´não está em 100%, torna-se necessário atuar fora do flexbox, centralizando horizontalmente o wrapper e o seu bloco de conteúdo dentro do container, criando espaçamento igual nas laterais até atingir esse limite */
+	}
+}
+
+/* ------------------------------------------
+-- Seção COMO TRABALHAMOS 
+--------------------------------------------> */
+.como-trabalhamos-container {
+	background-color: var(--cor-como-trabalhamos-fundo); /* D define a cor do background */
+	width: 			  100%; /* D garante que o container ocupe todo o espaço horizontal do elemento pai body() */
+	padding-top:	  3rem;
+	padding-bottom:   4rem;
+}
+
+.como-trabalhamos-container .wrapper {	
+	display: 	 	  flex;	  	  /* D ativa o Flexbox, permitindo alinhar e controlar os elementos do wrapper em linha (default) ou coluna. */
+	flex-direction:   column; 	  /* D define o eixo principal como vertical, organizando os elementos em coluna e empilhando verticalmente título (h2), subtítulo e descrições. Sem isso, os conteúdos ficariam lado a lado, quebrando o layout */
+	align-items: 	  felx-start; /* D alinha os elementos à esquerda, no topo do eixo vertical (secundário) */
+	max-width: 	  	  1400px; 	  /* D limita o espaço para o texto + imagem, garantindo que o layout mantenha proporção harmoniosa em diferentes tamanhos de tela */
+	margin: 	 	  0 auto; 	  /* Centraliza horizontalmente o wrapper dentro da página */ 
+}
+
+.como-trabalhamos-container .wrapper .texto {
+    max-width: 	   100%; /* D define a largura máxima do elemento */
+	text-align:    left; /* D alinha o texto à esquerda no elemento */
+	padding-left:  8rem;  
+	padding-right: 8rem;  
+}
+
+.como-trabalhamos-container .wrapper .texto .titulo {
+	color: 		   var(--cor-como-trabalhamos-titulo); /* D define a cor da fonte */
+    font-size: 	   var(--fonte-size-titulo);           /* D define o tamanho da fonte */
+	font-weight:   var(--fonte-style-bold);			   /* D define o estilo da fonte */
+    line-height:   2rem;							   /* D define o espaçamento vertical entre as linhas do texto */
+	margin-bottom: 1rem; 							   /* D define o espaçamento vertical abaixo do elemento */
+}
+
+.como-trabalhamos-container .wrapper .texto .subtitulo {
+    font-size: 	   var(--fonte-size-subtitulo);           /* D define o tamanho da fonte */
+	color: 		   var(--cor-como-trabalhamos-subtitulo); /* D define a cor da fonte */
+	margin-top:    0;									  /* D define o espaçamento vertical acima do elemento */
+    margin-bottom: 1rem;  						 		  /* D define o espaçamento vertical abaixo do elemento */
+    padding-left:  0;      								  /* se quiser igualar alinhamento horizontal */
+}
+
+.como-trabalhamos-container .wrapper .texto .descricao {
+    font-size: 	   var(--fonte-size-descricao);			  /* D define o tamanho da fonte */
+	color: 		   var(--cor-como-trabalhamos-descricao); /* D define a cor da fonte */
+	margin-top:    0;									  /* D define o espaçamento vertical acima do elemento */
+    margin-bottom: 1rem;  								  /* D define o espaçamento vertical abaixo do elemento */
+    padding-left:  0;      /* se quiser igualar alinhamento horizontal */
+}
+.como-trabalhamos-container .wrapper .image {
+	display: 		 flex;   /* D ativa o Flexbox, permitindo alinhar e controlar os elementos do wrapper em linha (default) ou coluna. */
+	justify-content: center; /* D (agrupado no meio) centraliza a imagem no wrapper */
+}
+
+.como-trabalhamos-container .wrapper .image img {
+    width: 850px; /* D define a largura da imagem */
+}
+
+@media (max-width: 768px) {
+    .como-trabalhamos-container .wrapper  {
+        text-align: center;		/* D centraliza o texto dentro do elemento */
+    }
+
+    .como-trabalhamos-container .wrapper .texto {
+		text-align: center; /* D centraliza o texto dentro do elemento */
+		padding: 2rem 2rem;
+    }
+
+	.como-trabalhamos-container .wrapper .texto .subtitulo {
+		margin-bottom: 1rem;  
+	}
+
+	.como-trabalhamos-container .wrapper .texto .descricao {
+		margin-bottom: 1;  
+	}
+    .como-trabalhamos-container .wrapper .image img {
+        width: 100%;
+		max-width: 500px; /* ou o tamanho máximo da imagem vertical */
+		height: auto;
+    }
+}
+/* ------------------------------------------
+-- Seção PARCEIROS
+--------------------------------------------> */
+.parceiros-container {							  
+	background-color: var(--cor-parceiros-fundo); /* D define a cor do background */
+	width: 			  100%; 					  /* D garante que o container ocupe todo o espaço horizontal do elemento-pai body() */
+	padding-top:	  3rem;
+	padding-right:	  0rem;
+	padding-bottom:   3rem;
+	padding-left:	  0rem;
+	min-height: 	  100px;   	 				  /* D define a altura mínima em relação a altura da viewport (tela visível do navegador), independente da altura do conteúdo */
+}
+
+.parceiros-container .wrapper {
+	display: 	 	  flex;	  /* D ativa o Flexbox, permitindo alinhar e controlar os elementos do wrapper em linha (default) ou coluna. */
+	flex-direction:   column; /* D define o eixo principal como vertical, organizando os elementos em coluna e empilhando verticalmente o título (h2) e o bloco de logos (.parceiros-logos). Sem isso, o título ficaria ao lado dos logos, quebrando o layout.*/
+	align-items: 	  center; /* D centraliza os elementos ao longo do eixo horizontal (secundário) */ 
+	max-width: 	  	  1400px; /* D limita a largura máxima para evitar que os logos fiquem muito espaçados em telas grandes. Se tiver poucos logos, mantém o layout coeso e organizado */
+	margin: 	 	  0 auto; /* D atua fora do flexbox, centralizando horizontalmente o wrapper e o seu bloco de conteúdo dentro do container. Como .wrapper tem uma largura definida (width, max-width), margin: 0 auto cria espaçamento igual nas laterais até atingir esse limite. (responsividade) */
+}
+
+.parceiros-container .wrapper .titulo {
+	color: 		   var(--cor-parceiros-titulo); /* D define a cor da fonte */
+    font-size: 	   var(--fonte-size-titulo);    /* D define o tamanho da fonte */
+	font-weight:   var(--fonte-style-bold);		/* D define o estilo da fonte */
+    line-height:   2rem;						/* D define o espaçamento vertical entre as linhas do texto */
+	text-align:    center; 						/* D centraliza o texto dentro do elemento */
+	margin-bottom: 2rem;   						/* D define o espaçamento vertical abaixo do elemento */
+}
+
+.parceiros-container .wrapper .logos { /* D converge catarterísticas comuns aplicadas nos logos dos parceiros */
+	display: 		 flex;   		   /* D ativa o Flexbox, permitindo alinhar e controlar os elementos do wrapper em linha (default) ou coluna. */
+	flex-wrap: 	   	 wrap;	 		   /* D permite quebrar linha se o espaço não for suficiente (responsividade) */
+	justify-content: center; 		   /* D (agrupado no meio) centraliza os logos lado a lado horizontalmente */
+	gap: 			 2rem;   		   /* D cria espaçamento uniforme entre os blocos de conteúdo (logos), mantendo-os organizados visualmente e melhorando a legibilidade e experiência do usuário em layouts responsivos */
+}
+
+.parceiros-container .wrapper .logos img {  /* Estilos para os logos individuais */		  
+  width:   150px;       /* define a largura fixa dos logos como tamanho uniforme (manter entre 120px e 160px) */
+  height:  auto;        /* define a altura ajustada proporcionalmente, preservando a proporção original */
+}
+
+@media (max-width: 768px) { /* Responsividade: em telas menores, empilhar logos verticalmente */
+  .parceiros-container .wrapper .logos {
+    flex-direction: column; /* D define o eixo principal como vertical, organizando os elementos em coluna para fins de responsividade */
+    align-items: center;    /* D centraliza os logos ao longo do eixo horizontal (secundário) */ 
+  }
+}
+
+/* ------------------------------------------
+-- Seção FOOTER
+--------------------------------------------> */
+.footer-container {
+	background-color: var(--cor-footer-fundo); /* D define a cor do background */
+	width:  		  100%;	 				   /* D garante que o container ocupe todo o espaço horizontal do elemento-pai body() */
+	padding: 		  1rem 0;
+}
+
+.footer-container .wrapper {
+	display: 		 flex;			/* D ativa o Flexbox, permitindo alinhar e controlar os elementos do wrapper em linha (default) ou coluna. */
+	justify-content: space-between; /* D (espalhado sem bordas) posiciona o bloco da esquerda (com o logo) colado na borda da esquerda, e o bloco da direita (e-mail de contato) colado na borda da direita, sem espaço extra nessas bordas */ 
+    align-items: 	 center;		/* D centraliza os elementos ao longo do eixo vertical (secundário) */
+    width:  		 100%;			/* D garante que o container ocupe todo o espaço horizontal do elemento-pai body() */
+}
+
+.footer-container .wrapper > a img {
+	display: block; /* D converte o logo em um bloco para que não sofra influência do comportamento inline, respeite as dimensões definidas e não gere espaços colaterais indesejados */
+    height: 80px; 	/* D define a altura do logo */
+	padding-left: 2.5rem;
+}
+
+.footer-container .wrapper .contato {
+	color: 		 var(--cor-footer-descricao); /* D define a cor da fonte */
+	text-align:  right;    					  /* D alinha o texto à direita no elemento */
+    padding-right: 1.7rem; 
+}
+
+@media (max-width: 768px) { /* Responsividade: em telas menores, empilhar logos verticalmente */
+	.footer-container .wrapper {
+		flex-direction: column; /* D define o eixo principal como vertical, organizando os elementos em coluna para fins de responsividade */
+		align-items:    center; /* D centraliza os elementos ao longo do eixo horizontal (secundário) */
+  }
+	.footer-container .wrapper .logo {
+		text-align:   center; /* D centraliza o texto dentro do elemento */
+		padding-left: 0;
+	}
+	.footer-container .wrapper .contato {
+		text-align:    center; /* D centraliza o texto dentro do elemento */
+		padding-right: 0;
+	}
+}
+
+
