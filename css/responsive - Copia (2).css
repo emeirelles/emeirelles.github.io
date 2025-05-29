@@ -12,7 +12,7 @@
         background-color: var(--cor-header-fundo); /* D define a cor do background */
         display:    	none; 	/* D oculta o menu na tela */
         flex-direction: column; /* D redefine o eixo principal como vertical, organizando os itens de menu em coluna para o menu abrir verticalmente */
-        width: 100%;            /* D garante que o menu ocupe todo o espaço horizontal do contêiner, tornando-o fácil de clicar e visualmente consistente em todos os dispositivos */
+        width: 100%;            /* D garante que o menu ocupe todo o espaço horizontal do contêiner, tornando-o fácil de clicar e visualmente consistente em todos os dispositivos. */
         padding: 1rem 0;        /* D adiciona preenchimento vertical (superior e inferior), sem preenchimento horizontal, proporcionando espaço para respirar acima e abaixo dos itens do menu, melhorando a legibilidade e a acessibilidade ao clicar */
     }
 	
@@ -23,7 +23,7 @@
 	.header-container .wrapper .icon {
 		color: var(--cor-header-mainnav); /* D define a cor da fonte */
 		display: block; 	   /* D mostra o ícone hamburguer, o convertendo em um bloco para que não sofra influência do comportamento inline, respeite as dimensões definidas e não gere espaços colaterais indesejados */
-        text-decoration: none; /* D remove o sublinhado padrão dos links (<a>) - obs: não remove a cor */
+        text-decoration: none; /* D remove o sublinhado padrão dos links (<a>) - obs: não remove a cor. */
         padding: 0.5rem;       /* D adiciona preenchimento ao redor do ícone, tornando-o mais fácil de clicar e visualmente agradável */
 	}
 
@@ -67,7 +67,7 @@
 
     .nossa-atuacao-container .wrapper .texto {
 		text-align: center; /* D centraliza o texto dentro do elemento */
-		padding: 0rem 2rem; /* D ajusta os preenchimentos verticals (superior e inferior) e horizontais */
+		padding: 2rem 2rem; /* D adiciona preenchimento vertical (superior e inferior), sem preenchimento horizontal */
     }
 
 	.nossa-atuacao-container .wrapper .texto .subtitulo {
@@ -79,25 +79,35 @@
 	}
 
     /* ------------------------------------------
-    -- #media Subseção LISTA / NOSSA ATUAÇÃO
+    -- @media LISTA / NOSSA ATUAÇÃO
     --------------------------------------------> */
-    .nossa-atuacao-container .wrapper .lista-container {
+    .lista-container {
         flex-direction: column; /* D redefine o eixo principal como vertical, organizando os elementos em coluna para fins de responsividade */
 		align-items:    center; /* D centraliza os elementos ao longo do eixo horizontal (secundário) */
-        gap:            1rem;		 /* D cria espaçamento uniforme entre os blocos de conteúdo, mantendo-os organizados visualmente e melhorando a legibilidade e experiência do usuário em layouts responsivos */
-        
+        margin: 0;
+        padding: 0 0;
     }
 
-    .nossa-atuacao-container .wrapper .lista-container .elemento .icone img { 
-		padding: 0; /* D remove o preenchimento ao redor do elemento */
+	.lista-container .elemento {
+        margin:        0;
+        margin-bottom: 0;
+        padding:       0;
     }
-
-	.nossa-atuacao-container .wrapper .lista-container .elemento .texto { 
-		padding: 0; /* D remove o preenchimento ao redor do elemento */
+    .lista-container .elemento .icone img { 
+		margin-bottom: 0; /* D remove o espaçamento vertical abaixo do elemento */
+		padding:       0; /* D remove o preenchimento ao redor do elemento */
 	}
 
-    .nossa-atuacao-container .wrapper .lista-container .elemento .texto h3 { 
-		margin-top: 0.3rem; /* D ajusta o espaçamento vertical acima do elemento */
+	.lista-container .elemento .texto h3 { 
+		margin-top:    0; /* D remove o espaçamento vertical acima do elemento */
+		margin-bottom: 0; /* D remove o espaçamento vertical abaixo do elemento */
+		padding:       0; /* D remove o preenchimento ao redor do elemento */
+	}
+
+	.lista-container .elemento .texto p { 
+		margin-top:    0; /* D remove o espaçamento vertical acima do elemento */
+		margin-bottom: 0; /* D remove o espaçamento vertical abaixo do elemento */
+		padding:       0; /* D remove o preenchimento ao redor do elemento */
 	}
 
     /* ------------------------------------------
@@ -139,13 +149,13 @@
 	}
 
     .como-trabalhamos-container .wrapper .image .img-horizontal {
-        display: block;  /* D oculta a imagem horizontal na tela */
+        display: none;  /* D oculta a imagem horizontal na tela */
     }
 
     .como-trabalhamos-container .wrapper .image .img-vertical {
-        display:   none; /* D converte a imagem em um bloco para que respeite as dimensões definidas e não gere espaços colaterais indesejados */
+        display:   block; /* D converte a imagem em um bloco para que respeite as dimensões definidas e não gere espaços colaterais indesejados */
         width:     100%;  /* D garante que a imagem ocupe todo o espaço horizontal do contêiner */
-        max-width: 381px; /* D determina a largura máxima da imagem vertical */
+        max-width: 314px; /* D determina a largura máxima da imagem vertical */
         height:    auto;  /* D garante a proporcionalidade da altura da imagem verticam em relação à sua largura */
     }
 
