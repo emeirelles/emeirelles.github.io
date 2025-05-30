@@ -139,11 +139,11 @@
 	}
 
     .como-trabalhamos-container .wrapper .image .img-horizontal {
-        display: block;  /* D oculta a imagem horizontal na tela */
+        display: none;  /* D oculta a imagem horizontal na tela */
     }
 
     .como-trabalhamos-container .wrapper .image .img-vertical {
-        display:   none; /* D converte a imagem em um bloco para que respeite as dimensões definidas e não gere espaços colaterais indesejados */
+        display:   block; /* D converte a imagem em um bloco para que respeite as dimensões definidas e não gere espaços colaterais indesejados */
         width:     100%;  /* D garante que a imagem ocupe todo o espaço horizontal do contêiner */
         max-width: 381px; /* D determina a largura máxima da imagem vertical */
         height:    auto;  /* D garante a proporcionalidade da altura da imagem verticam em relação à sua largura */
