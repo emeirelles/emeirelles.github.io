@@ -4,192 +4,251 @@
     -- @media HEADER
     --------------------------------------------> */
 	.header-container .wrapper {
-        align-items: flex-start; /* D alinha os elementos do wrapper no topo do eixo vertical (secundário) para fins de responsividade */
-        height: 	 auto;       /* D Somente necessário porque no wrapper existe um height fixo parametrizado */
+        align-items: flex-start; /* alinha os elementos do wrapper no topo do eixo vertical (secundário) para fins de responsividade */
+        height: 	 auto;       /* Somente necessário porque no wrapper existe um height fixo parametrizado */
 	}
 	
     .header-container .wrapper .mainnav {
-        background-color: var(--cor-header-fundo); /* D define a cor do background */
-        display:    	none; 	/* D oculta o menu na tela */
-        flex-direction: column; /* D redefine o eixo principal como vertical, organizando os itens de menu em coluna para o menu abrir verticalmente */
-        width: 100%;            /* D garante que o menu ocupe todo o espaço horizontal do contêiner, tornando-o fácil de clicar e visualmente consistente em todos os dispositivos */
-        padding: 1rem 0;        /* D adiciona preenchimento vertical (superior e inferior), sem preenchimento horizontal, proporcionando espaço para respirar acima e abaixo dos itens do menu, melhorando a legibilidade e a acessibilidade ao clicar */
+        background-color: var(--cor-header-fundo); /* define a cor do background */
+        display:    	none; 	/* oculta o menu na tela */
+        flex-direction: column; /* redefine o eixo principal como vertical, organizando os itens de menu em coluna para o menu abrir verticalmente */
+        width: 100%;            /* garante que o menu ocupe todo o espaço horizontal do contêiner, tornando-o fácil de clicar e visualmente consistente em todos os dispositivos */
+        padding: 1rem 0;        /* adiciona preenchimento vertical (superior e inferior), sem preenchimento horizontal, proporcionando espaço para respirar acima e abaixo dos itens do menu, melhorando a legibilidade e a acessibilidade ao clicar */
     }
 	
 	.header-container .wrapper .mainnav.active {
-		display:    flex;  /* D ativa o Flexbox, permitindo alinhar e controlar os itens do menu coluna vertical para uma navegação responsiva */
+		display:    flex;  /* ativa o Flexbox, permitindo alinhar e controlar os itens do menu coluna vertical para uma navegação responsiva */
 	}
 	
 	.header-container .wrapper .icon {
-		color: var(--cor-header-mainnav); /* D define a cor da fonte */
-		display: block; 	   /* D mostra o ícone hamburguer, o convertendo em um bloco para que não sofra influência do comportamento inline, respeite as dimensões definidas e não gere espaços colaterais indesejados */
-        text-decoration: none; /* D remove o sublinhado padrão dos links (<a>) - obs: não remove a cor */
-        padding: 0.5rem;       /* D adiciona preenchimento ao redor do ícone, tornando-o mais fácil de clicar e visualmente agradável */
+		color: var(--cor-header-mainnav); /* define a cor da fonte */
+		display: block; 	   /* mostra o ícone hamburguer, o convertendo em um bloco para que não sofra influência do comportamento inline, respeite as dimensões definidas e não gere espaços colaterais indesejados */
+        text-decoration: none; /* remove o sublinhado padrão dos links (<a>) - obs: não remove a cor */
+        padding: 0.5rem;       /* adiciona preenchimento ao redor do ícone, tornando-o mais fácil de clicar e visualmente agradável */
 	}
 
     /* ------------------------------------------
     -- @media HERO
     --------------------------------------------> */
     .hero-container .wrapper  {
-        flex-direction: column; /* D redefine o eixo principal como vertical, organizando os elementos em coluna para fins de responsividade */
-        text-align: 	center; /* D centraliza o texto dentro do wrapper */
-        padding: 		1rem;	/* D adiciona preenchimento ao redor do wrapper */
-		gap: 			0.5rem; /* D ajusta o gap entre os blocos para fins de responsividade */
+        flex-direction: column; /* redefine o eixo principal como vertical, organizando os elementos em coluna para fins de responsividade */
+        text-align: 	center; /* centraliza o texto dentro do wrapper */
+        padding: 		1rem;	/* adiciona preenchimento ao redor do wrapper */
+		gap: 			0.5rem; /* ajusta o gap entre os blocos para fins de responsividade */
     }
 
     .hero-container .wrapper .slogan, .hero-container .wrapper .detalhe {
-        display: contents;	   /* D remove o próprio elemento do fluxo do layout, fazendo com que seus filhos se comportem como se pertencessem ao pai do elemento que, neste caso, é body(). Foi a solução encontrada para dinimuir a distância vertical entre os blocos slogan e detalhe */
-		max-width: 	   90%;    /* D redefine a largura máxima elemento */
-        padding-right: 0;  	   /* D remove a padding lateral direita */
-        margin-bottom: 0;      /* D redefine o espaçamento vertical abaixo do elemento */
-		text-align:    center; /* D centraliza o texto dentro do elemento */
-		margin:        0 auto; /* D atua fora do elemento, centralizando-o horizontalmente e criando espaçamento igual nas laterais até atingir esse limite */
+        display: contents;	   /* remove o próprio elemento do fluxo do layout, fazendo com que seus filhos se comportem como se pertencessem ao pai do elemento que, neste caso, é body(). Foi a solução encontrada para dinimuir a distância vertical entre os blocos slogan e detalhe */
+		max-width: 	   90%;    /* redefine a largura máxima elemento */
+        padding-right: 0;  	   /* remove a padding lateral direita */
+        margin-bottom: 0;      /* redefine o espaçamento vertical abaixo do elemento */
+		text-align:    center; /* centraliza o texto dentro do elemento */
+		margin:        0 auto; /* atua fora do elemento, centralizando-o horizontalmente e criando espaçamento igual nas laterais até atingir esse limite */
 		
     }
     
     .hero-container .wrapper .slogan .titulo {
-        font-size:   2.5rem; /* D ajusta o tamanho da fonte da classe titulo do título, bloco Slogan */
-        line-height: 3rem;   /* D ajusta o espaçamento vertical entre as linhas do texto */
+        font-size:   2.5rem; /* ajusta o tamanho da fonte da classe titulo do título, bloco Slogan */
+        line-height: 3rem;   /* ajusta o espaçamento vertical entre as linhas do texto */
 
     }
     
     .hero-container .wrapper .detalhe .descricao {
-        font-size:   1.1rem; /* D ajusta o tamanho da fonte da classe descricao, bloco detalhe */
-        line-height: 1.5rem; /* D ajusta o espaçamento vertical entre as linhas do texto */
+        font-size:   1.1rem; /* ajusta o tamanho da fonte da classe descricao, bloco detalhe */
+        line-height: 1.5rem; /* ajusta o espaçamento vertical entre as linhas do texto */
     }
 
     /* ------------------------------------------
     -- @media NOSSA ATUAÇÃO
     --------------------------------------------> */
     .nossa-atuacao-container {
-	    padding-top: 0rem;    /* D remove a padding superior */
-	    padding-right: 0rem;  /* D remove a padding da direita */
-        padding-bottom: 2rem; /* D remove a padding inferior */
-	    padding-left: 0rem;   /* D remove a padding lateral esquerda */
+	    padding-top: 0rem;    /* remove a padding superior */
+	    padding-right: 0rem;  /* remove a padding da direita */
+        padding-bottom: 2rem; /* remove a padding inferior */
+	    padding-left: 0rem;   /* remove a padding lateral esquerda */
     }
 
     .nossa-atuacao-container .wrapper  {
-        text-align: center;	/* D centraliza o texto dentro do elemento */
+        text-align: center;	/* centraliza o texto dentro do elemento */
     }
 
     .nossa-atuacao-container .wrapper .texto {
-		text-align: center; /* D centraliza o texto dentro do elemento */
-		padding: 0rem 2rem; /* D ajusta os preenchimentos verticals (superior e inferior) e horizontais */
+		text-align: center; /* centraliza o texto dentro do elemento */
+		padding: 0rem 2rem; /* ajusta os preenchimentos verticals (superior e inferior) e horizontais */
     }
 
 	.nossa-atuacao-container .wrapper .texto .titulo {
-        padding-top:  2rem; /* D ajusta o preenchimento superior no elemento */ 
+        padding-top:  2rem; /* ajusta o preenchimento superior no elemento */ 
 	}
 
     .nossa-atuacao-container .wrapper .texto .subtitulo {
-		margin-bottom: 1rem;   /* D ajusta a margem abaixo do elemento */
-	    padding-right: 1.5rem; /* D ajusta o preenchimento à direita no elemento */  
-        padding-left:  0rem;   /* D ajusta o preenchimento à esquerda no elemento */ 
+		margin-bottom: 1rem;   /* ajusta a margem abaixo do elemento */
+	    padding-right: 1.5rem; /* ajusta o preenchimento à direita no elemento */  
+        padding-left:  0rem;   /* ajusta o preenchimento à esquerda no elemento */ 
 	}
 	
 	.nossa-atuacao-container .wrapper .texto .descricao {
-        font-size: var(--fonte-size-subtitulo);	/* D define o tamanho da fonte */
-		margin-bottom: 1rem;                    /* D ajusta a margem abaixo do elemento */
-	    padding-right: 1.5rem;                  /* D ajusta o preenchimento à direita no elemento */  
-        padding-left:  0rem;                    /* D ajusta o preenchimento à esquerda no elemento */ 
+        font-size: var(--fonte-size-subtitulo);	/* define o tamanho da fonte */
+		margin-bottom: 1rem;                    /* ajusta a margem abaixo do elemento */
+	    padding-right: 1.5rem;                  /* ajusta o preenchimento à direita no elemento */  
+        padding-left:  0rem;                    /* ajusta o preenchimento à esquerda no elemento */ 
 	}
 
     /* ------------------------------------------
-    -- #media Subseção LISTA / NOSSA ATUAÇÃO
+    -- #media Subseção NOSSA ATUAÇÃO/LISTA
     --------------------------------------------> */
     .nossa-atuacao-container .wrapper .lista-container {
-        flex-direction: column; /* D redefine o eixo principal como vertical, organizando os elementos em coluna para fins de responsividade */
-		align-items:    center; /* D centraliza os elementos ao longo do eixo horizontal (secundário) */
-        gap:            1rem;	/* D ajusta o gap entre os blocos */
+        flex-direction: column; /* redefine o eixo principal como vertical, organizando os elementos em coluna para fins de responsividade */
+		align-items:    center; /* centraliza os elementos ao longo do eixo horizontal (secundário) */
+        gap:            1rem;	/* ajusta o gap entre os blocos */
         
     }
 
     .nossa-atuacao-container .wrapper .lista-container .elemento .icone img { 
-		padding: 0; /* D remove o preenchimento ao redor do elemento */
+		padding: 0; /* remove o preenchimento ao redor do elemento */
     }
 
 	.nossa-atuacao-container .wrapper .lista-container .elemento .texto { 
-		padding: 0; /* D remove o preenchimento ao redor do elemento */
+		padding: 0; /* remove o preenchimento ao redor do elemento */
 	}
 
     .nossa-atuacao-container .wrapper .lista-container .elemento .texto h3 { 
-		margin-top: 0.3rem; /* D ajusta o espaçamento vertical acima do elemento */
+		margin-top: 0.3rem; /* ajusta o espaçamento vertical acima do elemento */
 	}
 
     /* ------------------------------------------
     -- @media QUEM SOMOS
     --------------------------------------------> */
 	.quem-somos-container {
-        padding: 0; /* D remove o preenchimento no redor do elemento */
-        margin: 0;  /* D remove a margem ao redor do elemento */
+        padding: 0; /* remove o preenchimento no redor do elemento */
+        margin: 0;  /* remove a margem ao redor do elemento */
     }
 
     .quem-somos-container .wrapper {
-		flex-direction: column; /* D redefine o eixo principal como vertical, organizando os elementos em coluna para fins de responsividade */
+		flex-direction: column; /* redefine o eixo principal como vertical, organizando os elementos em coluna para fins de responsividade */
     }
 
     .quem-somos-container .wrapper .img {
-		display: none;  		 /* D oculta a imagem à esquerda em telas pequenas */
+		display: none;  		 /* oculta a imagem à esquerda em telas pequenas */
 	}
 
     .quem-somos-container .wrapper .texto {
 		max-width:     100%;   /* ajusta a largura máxima do elemento */
-        text-align: center;    /* D centraliza o texto dentro do elemento */
-        margin: 2rem;          /* D ajusta a margem ao redor do elemento */
-        padding-top: 0rem;     /* D ajusta o preenchimento superior no elemento */ 
-        padding-right: 1.5rem; /* D ajusta o preenchimento lateral direito no elemento */ 
-        padding-bottom: 0rem;  /* D ajusta o preenchimento inferior no elemento */ 
-        padding-left: 0rem;    /* D ajusta o preenchimento lateral esquerdo no elemento */ 
+        text-align: center;    /* centraliza o texto dentro do elemento */
+        margin: 2rem;          /* ajusta a margem ao redor do elemento */
+        padding-top: 0rem;     /* ajusta o preenchimento superior no elemento */ 
+        padding-right: 1.5rem; /* ajusta o preenchimento lateral direito no elemento */ 
+        padding-bottom: 0rem;  /* ajusta o preenchimento inferior no elemento */ 
+        padding-left: 0rem;    /* ajusta o preenchimento lateral esquerdo no elemento */ 
     }
 
     .quem-somos-container .wrapper .texto .descricao {	
-        font-size: var(--fonte-size-subtitulo);	/* D ajusta o tamanho da fonte */
-        margin-bottom: 1rem;  					/* D ajusta o espaçamento vertical abaixo do elemento */
+        font-size: var(--fonte-size-subtitulo);	/* ajusta o tamanho da fonte */
+        margin-bottom: 1rem;  					/* ajusta o espaçamento vertical abaixo do elemento */
     }
+
     /* ------------------------------------------
     -- @media COMO TRABALHAMOS 
     --------------------------------------------> */
     .como-trabalhamos-container {
-	    padding-top: 0rem;    /* D remove a padding superior */
-	    padding-right: 0rem;  /* D remove a padding da direita */
-        padding-bottom: 2rem; /* D remove a padding inferior */
-	    padding-left: 0rem;   /* D remove a padding lateral esquerda */
+	    padding-top: 0rem;    /* remove a padding superior */
+	    padding-right: 0rem;  /* remove a padding da direita */
+        padding-bottom: 2rem; /* remove a padding inferior */
+	    padding-left: 0rem;   /* remove a padding lateral esquerda */
     }
 
     .como-trabalhamos-container .wrapper  {
-        flex-direction: column; /* D redefine o eixo principal como vertical, organizando os elementos em coluna para fins de responsividade */
-		align-items:    center; /* D centraliza os elementos ao longo do eixo horizontal (secundário) */
+        flex-direction: column; /* redefine o eixo principal como vertical, organizando os elementos em coluna para fins de responsividade */
+		align-items:    center; /* centraliza os elementos ao longo do eixo horizontal (secundário) */
     }
 
     .como-trabalhamos-container .wrapper .texto {
-		text-align: center;    /* D centraliza o texto dentro do elemento */
-	    margin: 2rem;          /* ajusta a margem ao redor do elemento */
-        padding-top: 0rem;     /* D ajusta o preenchimento superior no elemento */ 
-        padding-right: 1.5rem; /* D ajusta preenchimento à direita no elemento */  
-        padding-bottom: 0rem;  /* D ajusta preenchimento inferior no elemento */
-	    padding-right: 1.5rem; /* D ajusta preenchimento à direita no elemento */  
-        padding-left:  0rem;   /* D ajusta preenchimento à esquerda no elemento */ 
+		text-align:     center; /* centraliza o texto dentro do elemento */
+	    margin:         2rem;   /* ajusta a margem ao redor do elemento */
+        padding-top:    0rem;   /* ajusta o preenchimento superior no elemento */ 
+        padding-right:  1.5rem; /* ajusta preenchimento à direita no elemento */  
+        padding-bottom: 0rem;   /* ajusta preenchimento inferior no elemento */
+	    padding-right:  1.5rem; /* ajusta preenchimento à direita no elemento */  
+        padding-left:   0rem;   /* ajusta preenchimento à esquerda no elemento */ 
     }
 
 	.como-trabalhamos-container .wrapper .texto .subtitulo {
-		margin-bottom: 1rem;  /* D ajusta o espaçamento vertical abaixo do elemento */
+		margin-bottom: 1rem; /* ajusta o espaçamento vertical abaixo do elemento */
 	}
 
 	.como-trabalhamos-container .wrapper .texto .descricao {
-        font-size: var(--fonte-size-subtitulo);	/* D define o tamanho da fonte */
-		margin-bottom: 1rem;                    /* D ajusta o espaçamento vertical abaixo do elemento */
+        font-size: var(--fonte-size-subtitulo);	/* define o tamanho da fonte */
+		margin-bottom: 1rem;                    /* ajusta o espaçamento vertical abaixo do elemento */
 	}
 
     .como-trabalhamos-container .wrapper .image .img-horizontal {
-        display: none;  /* D oculta a imagem horizontal na tela */
+        display: none;  /* oculta a imagem horizontal na tela */
     }
 
     .como-trabalhamos-container .wrapper .image .img-vertical {
-        display:   block; /* D converte a imagem em um bloco para que respeite as dimensões definidas e não gere espaços colaterais indesejados */
-        width:     100%;  /* D garante que a imagem ocupe todo o espaço horizontal do contêiner */
-        max-width: 381px; /* D determina a largura máxima da imagem vertical */
-        height:    auto;  /* D garante a proporcionalidade da altura da imagem verticam em relação à sua largura */
+        display:   block; /* converte a imagem em um bloco para que respeite as dimensões definidas e não gere espaços colaterais indesejados */
+        width:     100%;  /* garante que a imagem ocupe todo o espaço horizontal do contêiner */
+        max-width: 610px; /* determina a largura máxima da imagem vertical */
+        height:    auto;  /* garante a proporcionalidade da altura da imagem verticam em relação à sua largura */
     }
+
+    /* ------------------------------------------
+    -- @media NOSSA ATUAÇÃO
+    --------------------------------------------> */
+    .tecnologias-container {
+	    padding-top:    0rem; /* remove a padding superior */
+	    padding-right:  0rem; /* remove a padding da direita */
+        padding-bottom: 2rem; /* remove a padding inferior */
+	    padding-left:   0rem; /* remove a padding lateral esquerda */
+    }
+
+    .tecnologias-container .wrapper  {
+        text-align: center;	/* centraliza o texto dentro do elemento */
+    }
+
+    .tecnologias-container .wrapper .texto {
+		text-align: center; /* centraliza o texto dentro do elemento */
+		padding: 0rem 2rem; /* ajusta os preenchimentos verticals (superior e inferior) e horizontais */
+    }
+
+	.tecnologias-container .wrapper .texto .titulo {
+        padding-top:  2rem; /* ajusta o preenchimento superior no elemento */ 
+	}
+
+    .tecnologias-container .wrapper .texto .subtitulo {
+		margin-bottom: 1rem;   /* ajusta a margem abaixo do elemento */
+	    padding-right: 1.5rem; /* ajusta o preenchimento à direita no elemento */  
+        padding-left:  0rem;   /* ajusta o preenchimento à esquerda no elemento */ 
+	}
+	
+	.tecnologias-container .wrapper .texto .descricao {
+        font-size: var(--fonte-size-subtitulo);	/* define o tamanho da fonte */
+		margin-bottom: 1rem;                    /* ajusta a margem abaixo do elemento */
+	    padding-right: 1.5rem;                  /* ajusta o preenchimento à direita no elemento */  
+        padding-left:  0rem;                    /* ajusta o preenchimento à esquerda no elemento */ 
+	}
+
+    /* ------------------------------------------
+    -- #media Subseção TECNOLOGIAS/LISTA
+    --------------------------------------------> */
+    .tecnologias-container .wrapper .lista-container {
+        flex-direction: column; /* redefine o eixo principal como vertical, organizando os elementos em coluna para fins de responsividade */
+		align-items:    center; /* centraliza os elementos ao longo do eixo horizontal (secundário) */
+        gap:            1rem;	/* ajusta o gap entre os blocos */
+        
+    }
+
+    .tecnologias-container .wrapper .lista-container .elemento .icone img { 
+		padding: 0; /* D remove o preenchimento ao redor do elemento */
+    }
+
+	.tecnologias-container .wrapper .lista-container .elemento .texto { 
+		padding: 0; /* D remove o preenchimento ao redor do elemento */
+	}
+
+    .tecnologias-container .wrapper .lista-container .elemento .texto h3 { 
+		margin-top: 0.3rem; /* D ajusta o espaçamento vertical acima do elemento */
+	}
 
     /* ------------------------------------------
     -- @media PARCEIROS

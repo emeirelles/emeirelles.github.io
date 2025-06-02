@@ -2,15 +2,15 @@
 <html lang="pt-BR">
 <head>
     <meta charset="utf-8">
-    <title>3fase | Consultoria</title>
+    <title seletor="titulo">3fase | Consultoria</title>
     
-    <script src="js/fn.js"></script>
-
     <link rel="icon" href="favicon.ico" type=“image/x-icon”>
     
 	<link rel="stylesheet" media="screen" href="css/style.css">
 	<link rel="stylesheet" media="screen" href="css/responsive.css">
-    
+    <script src="js/fn.js"></script>
+	<script src="js/ls.js"></script>
+	
     <meta name="viewport"    content="width=device-width, initial-scale=1.0">
     <meta name="author"      content="3fase">
     <meta name="description" content="soluções além da tecnologia.">
@@ -33,12 +33,13 @@
     <div class="wrapper"> 
 		<a href="javascript:void(0);" onclick="myScrollTo('header');"><img src="images/logo_header.png" alt='3fase' role="presentation"></a>
         <nav id="mainnav" class="mainnav">
-			<a href="javascript:void(0);" onclick="myScrollTo('nossa-atuacao');">nossa atuação</a>
-            <a href="javascript:void(0);" onclick="myScrollTo('quem-somos');">quem somos</a>
-            <a href="javascript:void(0);" onclick="myScrollTo('como-trabalhamos');">como trabalhamos</a>
-            <a href="javascript:void(0);" onclick="myScrollTo('parceiros');">parceiros</a>
-            <a href="javascript:void(0);" onclick="myScrollTo('footer');">contato</a>
-			<a href="javascript:void(0);" onclick="myScrollTo('header');" class="language">English</a>
+			<a href="javascript:void(0);" onclick="myScrollTo('nossa-atuacao');" seletor="hdmn1">nossa atuação</a>
+            <a href="javascript:void(0);" onclick="myScrollTo('quem-somos');" seletor="hdmn2">quem somos</a>
+            <a href="javascript:void(0);" onclick="myScrollTo('como-trabalhamos');" seletor="hdmn3">como trabalhamos</a>
+            <a href="javascript:void(0);" onclick="myScrollTo('tecnologias');" seletor="hdmn4">tecnologias</a>
+            <a href="javascript:void(0);" onclick="myScrollTo('parceiros');" seletor="hdmn5">parceiros</a>
+            <a href="javascript:void(0);" onclick="myScrollTo('footer');" seletor="hdmn6">contato</a>
+			<a href="javascript:void(0);" onclick="myScrollTo('header');" id="lang-toggle" class="language">English</a>
         </nav>
         <a href="javascript:void(0);" class="icon" onclick="toggleHamburguer()">☰</a>
     </div>
@@ -51,14 +52,14 @@
     <div class="img"></div>
     <div class="wrapper">
         <div class="slogan">
-            <h1 class="titulo">Soluções além da tecnologia</h1>
+            <h1 seletor="hrtt1" class="titulo">Soluções além da tecnologia</h1>
         </div>
         <div class="detalhe">
-            <p class="descricao-paragrafo-1">
-                Analisamos desafios e transformamos oportunidades em inovação.
+            <p seletor="hrsb1" class="descricao-paragrafo-1">
+                Assumimos desafios e transformamos oportunidades em inovações.
             </p>
-            <p class="descricao-paragrafo-2">
-                A partir de abordagens integradas de processos e tecnologias, ampliamos possibilidades para o aprimoramento operacional e a criação de novos modelos de negócio.
+            <p seletor="hrsb2" class="descricao-paragrafo-2">
+                A partir de abordagens integradas de processos e tecnologias, ampliamos possibilidades para aprimoramentos operacionais e desenvolvimentos de novos modelos de negócio.
             </p>
         </div>
     </div>
@@ -70,45 +71,48 @@
 <section id="nossa-atuacao" class="nossa-atuacao-container">
 	<div class="wrapper">
 		<div class="texto">
-			<h2 class="titulo">Nossa atuação</h2>
-			<p class="subtitulo">
-				Na 3fase, vamos além da entrega técnica. Integramos consultorias especializadas, tecnologias inovadoras e experiência com processos para criar soluções personalizadas que impulsionam eficiência, produtividade e segurança nos negócios.
+			<h2 seletor="natt1" class="titulo">Nossa atuação</h2>
+			<p seletor="nasb1" class="subtitulo">
+				Na 3fase, vamos além da entrega técnica. Integramos processos inovadores, tecnologias de ponta e consultoria especializada.
+			</p>
+			<p seletor="nasb2" class="subtitulo">
+				Oferecemos soluções personalizadas que impulsionam eficiência, produtividade e segurança nas suas operações, viabilizando inclusive oportunidades para o desenvolvimento de novos negócios.
 			</p>
 		</div>
 		<div class="lista-container ">
 			<div class="elemento">
-				<div class="icone"><img src="images/icon_infra.svg" alt="Sistemas e infraestrutura" role="presentation"></div>
+				<div class="icone"><img src="images/iconna_infra.svg" alt="Sistemas e infraestrutura" role="presentation"></div>
 				<div class="texto">
-					<h3> SISTEMAS E INFRAESTRUTURA </h3>
-					<p> Análise do ambiente TI/TO, identificação de oportunidades para a otimização dos recursos. </p>
+					<h3 seletor="latt1">SISTEMAS E INFRAESTRUTURA</h3>
+					<p seletor="ladc1">Análise de ambientes TI/TO para identificação de oportunidades para otimizações de recursos.</p>
 				</div>
 			</div>
 			<div class="elemento">
-				<div class="icone"><img src="images/icon_checklist.svg" alt="Requisitos funcionais" role="presentation"></div>
+				<div class="icone"><img src="images/iconna_checklist.svg" alt="Requisitos funcionais" role="presentation"></div>
 				<div class="texto">
-					<h3> REQUISITOS FUNCIONAIS </h3>
-					<p> Levantamento, análise e seleção de sistemas ERPs, CRMs, TMS, WMS e EPMs. </p>
+					<h3 seletor="latt2">REQUISITOS FUNCIONAIS</h3>
+					<p seletor="ladc2">Levantamento, análise e seleção de sistemas ERP, CRM, TMS, WMS e EPM.</p>
 				</div>
 			</div>
 			<div class="elemento">
-				<div class="icone"><img src="images/icon_grafico.svg" alt="Melhoria de processos" role="presentation"></div>
+				<div class="icone"><img src="images/iconna_chart.svg" alt="Melhoria de processos" role="presentation"></div>
 				<div class="texto">
-					<h3> MELHORIA DE PROCESSOS </h3>
-					<p> Análise, definição, diagnósticos, recomendações e redesenhos de processos. </p>
+					<h3 seletor="latt3">MELHORIA DE PROCESSOS</h3>
+					<p seletor="ladc3">Análise, diagnóstico, recomendações e redesenhos voltados para processos.</p>
 				</div>
 			</div>
 			<div class="elemento">
-				<div class="icone"><img src="images/icon_placa.svg" alt="Transformação de processos" role="presentation"></div>
+				<div class="icone"><img src="images/iconna_transformation.svg" alt="Transformação de processos" role="presentation"></div>
 				<div class="texto">
-					<h3> TRANSFORMAÇÃO DE PROCESSOS </h3>
-					<p> Identificação e implantação de tecnologias para criação de modelos disruptivos. </p>
+					<h3 seletor="latt4">TRANSFORMAÇÃO DE PROCESSOS</h3>
+					<p seletor="ladc4">Identificação e implantação de tecnologias para a criação de modelos disruptivos.</p>
 				</div>
 			</div>
 			<div class="elemento">
-				<div class="icone"><img src="images/icon_proccheck.svg" alt="Desempenho de processos" role="presentation"></div>
+				<div class="icone"><img src="images/iconna_monitoring.svg" alt="Desempenho de processos" role="presentation"></div>
 				<div class="texto">
-					<h3> DESEMPENHO DE PROCESSOS </h3>
-					<p> Desenvolvimento, implantação e monitoramento de KPIs de operação e de gestão. </p>
+					<h3 seletor="latt5">DESEMPENHO DE PROCESSOS</h3>
+					<p seletor="ladc5">Desenvolvimento, implantação e monitoramento de KPIs de operação e estratégicos.</p>
 				</div>
 			</div>
 		</div>
@@ -122,15 +126,12 @@
 	<div class="wrapper">
 		<div class="img"></div>
 		<div class="texto">
-			<h2 class="titulo">Quem somos</h2>
-			<p class="subtitulo">
-				Somos uma integradora em tecnologias e processos com foco em soluções personalizadas e alinhadas ao negócio dos nossos clientes.
+			<h2 seletor="qstt1" class="titulo">Quem somos</h2>
+			<p seletor="qssb1" class="subtitulo">
+				Somos uma integradora em processos e tecnologias com foco em soluções personalizadas e alinhadas aos negócios dos nossos clientes. 
 			</p>
-			<p class="descricao">
-				Nossa equipe possui amplo conhecimento em gestão, modelos de negócios, processos, operações, TI e inovação. Temos experiência em diversos mercados assim como as suas singularidades.
-			</p>
-			<p class="descricao">
-				Em nossas soluções, consideramos a adequação dos processos ao perfil do cliente, as tecnologias que os potencializam e o monitoramento da execução visando ao aperfeiçoamento contínuo de pessoas, processos e tecnologias.
+			<p seletor="qssb2" class="subtitulo">
+				Nossos profissionais possuem experiência em gestão, modelos de negócio, processos, operações, TI e inovação, com vivência em diversos segmentos de mercado assim como nas suas especificidades.
 			</p>
 		</div>
 	</div>
@@ -142,14 +143,93 @@
 <section id="como-trabalhamos" class="como-trabalhamos-container">
 	<div class="wrapper">
 		<div class="texto">
-			<h2 class="titulo">Como trabalhamos</h2>
-			<p class="subtitulo">
-				Abordagem aplicada para a identificação do problema de negócio, implementação e até operação sustentável e com o suporte e treinamento adequados..
+			<h2 seletor="cttt1" class="titulo">Como trabalhamos</h2>
+			<p seletor="ctsb1" class="subtitulo">
+				A abordagem da 3fase vai além da implementação técnica.
+			</p>
+			<p seletor="ctdc1" class="descricao">
+				Adequamos nossas soluções ao negócio e perfil do cliente, colaborando para o aperfeiçoamento de pessoas, processos e tecnologias.
+			</p>
+			<p seletor="ctdc2" class="descricao">
+				Estruturamos o nosso método de trabalho em quatro etapas, desde a identificação de necessidades e oportunidades até a operação sustentável. 
+			</p>
+			<p class="image">
+				<img class="img-horizontal lang-pt" src="images/fluxo3faseT.png"  alt="Desenho esquemático da abordagem metodológica da 3fase, estruturada em quatro etapas que garantem que cada projeto seja executado com excelência, desde a identificação do problema/oportunidade até a operação sustentável.">
+				<img class="img-horizontal lang-en" src="images/fluxo3faseT_en.png"  alt="Schematic diagram of the 3fase methodological approach, structured in four stages that ensure each project is executed with excellence, from the identification of the problem/opportunity to sustainable operation.">
+				
+				<img class="img-vertical lang-pt"   src="images/fluxo3faseTV.png" alt="Desenho esquemático da abordagem metodológica da 3fase, estruturada em quatro etapas que garantem que cada projeto seja executado com excelência, desde a identificação do problema/oportunidade até a operação sustentável.">
+				<img class="img-vertical lang-en"   src="images/fluxo3faseTV_en.png" alt="Schematic diagram of the 3fase methodological approach, structured in four stages that ensure each project is executed with excellence, from the identification of the problem/opportunity to sustainable operation.">
+			</p>
+			<p seletor="ctds1" class="descricao">
+				Com base no entendimento do seu negócio, realizamos um diagnóstico detalhado para identificar necessidades, oportunidades e desafios, a partir dos quais propomos uma solução que combina e customiza os produtos e serviços mais adequados com o nível de aderência necessária.
+			</p>
+			<p seletor="ctds2" class="descricao">
+				Com a solução definida, detalhamos cada aspecto para garantir um plano de execução aderente. Alinhamos recursos, definimos cronogramas e contigenciamos eventuais riscos, garantindo que tudo esteja pronto para a implementação.
+			</p>
+			<p seletor="ctds3" class="descricao">
+				Executamos o plano com precisão, viabilizando tecnologias e serviços de acordo com as especificações e prazos pré-definidos minimizando interrupções, garantindo assim a eficiente e suave transição.
+			</p>
+			<p seletor="ctds4" class="descricao">
+				Após a implementação, estaremos ao seu lado para garantir a sustentabilidade da solução. Oferecemos suporte técnico contínuo, treinamentos para a sua equipe e acompanhamento das evoluções necessárias para manter a sua operação atualizada e otimizada.
 			</p>
 		</div>
-		<div class="image">
-			<img class="img-horizontal" src="images/fluxo3faseT.png"  alt="Desenho esquemático que demonstra a abordagem da 3fase aplicada para a identificação do problema de negócio, implementação e até operação sustentável e com o suporte e treinamento adequados.">
-			<img class="img-vertical"   src="images/fluxo3faseTV.png" alt="Desenho esquemático que demonstra a abordagem da 3fase aplicada para a identificação do problema de negócio, implementação e até operação sustentável e com o suporte e treinamento adequados.">
+	</div>
+</section>
+
+<!------------------------------------------
+-- SEÇÃO TECNOLOGIAS
+-------------------------------------------->
+<section id="tecnologias" class="tecnologias-container">
+	<div class="wrapper">
+		<div class="texto">
+			<h2 seletor="tctt1" class="titulo">Tecnologias</h2>
+			<p seletor="tcsb1" class="subtitulo">
+				Aplicamos tecnologias inovadoras voltadas para a gestão e operação de processos complexos e para a inteligência de negócios. 
+			</p>
+		</div>
+		<div class="lista-container ">
+			<div class="elemento">
+				<div class="icone"><img src="images/icontc_xreality.svg" alt="X-Reality" role="presentation"></div>
+				<div class="texto">
+					<h3 seletor="lttt1">X-REALITY</h3>
+					 <p seletor="ltdc1">Experiências com imersões sensoriais que combinam elementos do mundo real com ambientes digitais.</p>
+				</div>
+			</div>
+			<div class="elemento">
+				<div class="icone"><img src="images/icontc_ai.svg" alt="IA Generativa" role="presentation"></div>
+				<div class="texto">
+					<h3 seletor="lttt2">IA GENERATIVA</h3>
+					<p seletor="ltdc2">Modelos de aprendizado avançados desenvolvidos para gerar novos conteúdos com base nos padrões aprendidos.</p>
+				</div>
+			</div>
+			<div class="elemento">
+				<div class="icone"><img src="images/icontc_iot.svg" alt="IoT" role="presentation"></div>
+				<div class="texto">
+					<h3 seletor="lttt3">INTERNET DAS COISAS</h3>
+					<p seletor="ltdc3">A IoC viabiliza a coleta, compartilhamento e processamento real-time de dados por dispositivos conectados.</p>
+				</div>
+			</div>
+			<div class="elemento">
+				<div class="icone"><img src="images/icontc_computer_vision.svg" alt="Visão Computacional" role="presentation"></div>
+				<div class="texto">
+					<h3 seletor="lttt4">VISÃO COMPUTACIONAL</h3>
+					<p seletor="ltdc4">Interpretação e análise de informações visuais com foco na precisão e no aprimoramento de processos industriais complexos.</p>
+				</div>
+			</div>
+			<div class="elemento">
+				<div class="icone"><img src="images/icontc_analytics.svg" alt="Analytics" role="presentation"></div>
+				<div class="texto">
+					<h3 seletor="lttt5">DATA ANALYTICS PROCESSING</h3>
+					<p seletor="ltdc5">Permite a tomada de decisões com base em previsões e tendências extraídas de grandes volumes de dados.</p>
+				</div>
+			</div>
+			<div class="elemento">
+				<div class="icone"><img src="images/icontc_monitoring.svg" alt="Sensoriação Industrial" role="presentation"></div>
+				<div class="texto">
+					<h3 seletor="lttt6">SENSORIAÇÃO INDUSTRIAL</h3>
+					<p seletor="ltdc6">Monitoramento preditivo voltado para a redução de falhas e otimização em linhas de produção.</p>
+				</div>
+			</div>
 		</div>
 	</div>
 </section>
@@ -159,7 +239,7 @@
 -------------------------------------------->
 <section id="parceiros" class="parceiros-container">
 	<div class="wrapper">
-		<h2 class="titulo">Parceiros estratégicos</h2>
+		<h2 seletor="pett1" class="titulo">Parceiros estratégicos</h2>
 		<div class="logos">
 			<a href="http://www.datamint.com.br" target="_blank"><img src="images/logo_datamint.png" width="100%" alt="Parceiro Datamint" role="presentation"></a>
 			<a href="http://www.eyeflow.ai" 	 target="_blank"><img src="images/logo_eyeflow.png"  width="100%" alt="Parceiro Eyeflow"  role="presentation"></a>
@@ -176,8 +256,8 @@
 	<div class="wrapper">
 		<a href="javascript:void(0);" onclick="myScrollTo('header');"><img src="images/logo_footer.png" alt="3Fase" role="presentation"></a>
 		<div class="contato">
-			Contato: <br>
-			<a class="cor-footer-texto" href="mailto:info@3fase.com.br">info@3fase.com.br</a>
+			<p seletor="fttt1"> Contato: </p>
+			<a href="mailto:info@3fase.com.br">info@3fase.com.br</a>
 		</div>            
 	</div>
 </section>
