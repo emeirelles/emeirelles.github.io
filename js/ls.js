@@ -57,7 +57,7 @@ const translations = {
   ctit4: "maintenance",
   ctid4: "Solution maintenance, ongoing technical support, training, and monitoring",
   // tecnologias
-  tctt1: "Tecnologies",
+  tctt1: "Technologies",
   tcsb1: "We implement innovating technologies focused on complex process management and operation, as well as business intelligence improvement.",
   // tecnologias/lista
   lttt1: "X-REALITY",
