@@ -1,3 +1,10 @@
+// ==========================================
+//  3fase functions library
+// ==========================================
+
+// ------------------------------------------
+//  Rolagem suave da tela
+// ------------------------------------------
 function myScrollTo(id) {
     var topmenu = document.getElementById("mainnav");
     var el = document.getElementById(id);
@@ -10,6 +17,9 @@ function myScrollTo(id) {
     return false;
 }
 
+// ------------------------------------------
+//  Ativa o menu hamburguer
+// ------------------------------------------
 function toggleHamburguer() {
     const nav = document.getElementById("mainnav");
     nav.classList.toggle("active");
